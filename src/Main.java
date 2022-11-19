@@ -4,7 +4,6 @@ public class Main {
         int creditYears = 1;// срок кредита в годах
         CreditPaymentOptions myOptions = new CreditPaymentOptions();
         myOptions.rateYears = 9.99; //годовая процентная ставка
-        CreditPaymentService service = new CreditPaymentService(); //создаем экземпляр класса
         myOptions = CreditPaymentService.calculate(creditRub, creditYears, myOptions); //вызываем метод класса
         System.out.println("Сумма кредита: " + creditRub + " ₽");
         System.out.println("Срок кредита: " + creditYears + " год");
